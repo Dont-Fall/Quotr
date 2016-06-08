@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Quote-->
         <scene sceneID="NSJ-bY-C9Y">
             <objects>
-                <tableViewController id="sbC-Se-y8W" sceneMemberID="viewController">
+                <tableViewController title="Quote" id="sbC-Se-y8W" customClass="QuoteTVC" customModule="Quotr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="exh-gx-2bR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0dt-mT-lrj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0dt-mT-lrj" customClass="QuoteTVCell" customModule="Quotr" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0dt-mT-lrj" id="Hx7-CH-Z3l">
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-1515" y="218"/>
         </scene>
-        <!--Quotes-->
+        <!--Quote Nav-->
         <scene sceneID="28P-cC-v7q">
             <objects>
-                <navigationController id="1Zn-K8-df2" sceneMemberID="viewController">
+                <navigationController title="Quote Nav" id="1Zn-K8-df2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Quotes" id="Zxm-zT-oAz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Htf-zC-cyD">
@@ -59,7 +59,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="lLU-EL-ajB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fqu-Ef-mwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="bdv-rQ-X2J" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="dkb-6b-UNK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -73,20 +72,21 @@
                         <segue destination="B61-6A-0x8" kind="relationship" relationship="viewControllers" id="chs-xP-wUZ"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqu-Ef-mwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-165" y="224"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Tag-->
         <scene sceneID="964-xK-gaf">
             <objects>
-                <tableViewController id="40k-zy-fzu" sceneMemberID="viewController">
+                <tableViewController title="Tag" id="40k-zy-fzu" customClass="TagTVC" customModule="Quotr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kcJ-6d-p6r">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bfe-At-ByE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bfe-At-ByE" customClass="TagTVCell" customModule="Quotr" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bfe-At-ByE" id="tec-8m-77c">
@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="1417" y="218"/>
         </scene>
-        <!--Tags-->
+        <!--Tag Nav-->
         <scene sceneID="CfZ-vQ-Zrm">
             <objects>
-                <navigationController id="B61-6A-0x8" sceneMemberID="viewController">
+                <navigationController title="Tag Nav" id="B61-6A-0x8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tags" id="Rzu-4m-onM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CCO-wF-Zxl">
@@ -127,17 +127,17 @@
             </objects>
             <point key="canvasLocation" x="529" y="218"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Author-->
         <scene sceneID="Mc2-KH-aze">
             <objects>
-                <tableViewController id="VII-c6-faa" sceneMemberID="viewController">
+                <tableViewController title="Author" id="VII-c6-faa" customClass="AuthourTVC" customModule="Quotr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9IA-24-77G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zdz-at-xu2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zdz-at-xu2" customClass="AuthorTVCell" customModule="Quotr" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zdz-at-xu2" id="IQr-ba-qYz">
@@ -159,10 +159,10 @@
             </objects>
             <point key="canvasLocation" x="-153" y="1675"/>
         </scene>
-        <!--Authors-->
+        <!--Authors Nav-->
         <scene sceneID="nFd-BP-KkJ">
             <objects>
-                <navigationController id="kQS-1C-vxL" sceneMemberID="viewController">
+                <navigationController title="Authors Nav" id="kQS-1C-vxL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Authors" id="Aw4-NJ-381"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jng-u0-88Q">

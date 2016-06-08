@@ -13,6 +13,12 @@
 		8AC0C1191CFF22CE00A631F2 /* Quotr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0C1171CFF22CE00A631F2 /* Quotr.xcdatamodeld */; };
 		8AC0C11B1CFF22CE00A631F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC0C11A1CFF22CE00A631F2 /* Assets.xcassets */; };
 		8AC0C11E1CFF22CE00A631F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC0C11C1CFF22CE00A631F2 /* LaunchScreen.storyboard */; };
+		96F11F751D08797F008F28E6 /* AuthourTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F11F741D08797F008F28E6 /* AuthourTVC.swift */; };
+		96F11F771D0879D9008F28E6 /* TagTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F11F761D0879D9008F28E6 /* TagTVC.swift */; };
+		96F11F791D0879ED008F28E6 /* QuoteTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F11F781D0879ED008F28E6 /* QuoteTVC.swift */; };
+		96F11F7B1D087A14008F28E6 /* AuthorTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F11F7A1D087A14008F28E6 /* AuthorTVCell.swift */; };
+		96F11F7D1D087A26008F28E6 /* TagTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F11F7C1D087A26008F28E6 /* TagTVCell.swift */; };
+		96F11F7F1D087A3B008F28E6 /* QuoteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F11F7E1D087A3B008F28E6 /* QuoteTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		8AC0C11A1CFF22CE00A631F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AC0C11D1CFF22CE00A631F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AC0C11F1CFF22CE00A631F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96F11F741D08797F008F28E6 /* AuthourTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthourTVC.swift; sourceTree = "<group>"; };
+		96F11F761D0879D9008F28E6 /* TagTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagTVC.swift; sourceTree = "<group>"; };
+		96F11F781D0879ED008F28E6 /* QuoteTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTVC.swift; sourceTree = "<group>"; };
+		96F11F7A1D087A14008F28E6 /* AuthorTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorTVCell.swift; path = ../AuthorTVCell.swift; sourceTree = "<group>"; };
+		96F11F7C1D087A26008F28E6 /* TagTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagTVCell.swift; path = ../TagTVCell.swift; sourceTree = "<group>"; };
+		96F11F7E1D087A3B008F28E6 /* QuoteTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuoteTVCell.swift; path = ../QuoteTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				8AC0C1101CFF22CE00A631F2 /* AppDelegate.swift */,
-				8AC0C1121CFF22CE00A631F2 /* ViewController.swift */,
+				96F944D61D04EB3A008F635F /* View Controllers */,
 				8AC0C1141CFF22CE00A631F2 /* Main.storyboard */,
 				8AC0C11A1CFF22CE00A631F2 /* Assets.xcassets */,
 				8AC0C11C1CFF22CE00A631F2 /* LaunchScreen.storyboard */,
@@ -65,6 +77,20 @@
 				8AC0C1171CFF22CE00A631F2 /* Quotr.xcdatamodeld */,
 			);
 			path = Quotr;
+			sourceTree = "<group>";
+		};
+		96F944D61D04EB3A008F635F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AC0C1121CFF22CE00A631F2 /* ViewController.swift */,
+				96F11F741D08797F008F28E6 /* AuthourTVC.swift */,
+				96F11F7A1D087A14008F28E6 /* AuthorTVCell.swift */,
+				96F11F761D0879D9008F28E6 /* TagTVC.swift */,
+				96F11F7C1D087A26008F28E6 /* TagTVCell.swift */,
+				96F11F781D0879ED008F28E6 /* QuoteTVC.swift */,
+				96F11F7E1D087A3B008F28E6 /* QuoteTVCell.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F11F7D1D087A26008F28E6 /* TagTVCell.swift in Sources */,
+				96F11F7B1D087A14008F28E6 /* AuthorTVCell.swift in Sources */,
+				96F11F751D08797F008F28E6 /* AuthourTVC.swift in Sources */,
 				8AC0C1131CFF22CE00A631F2 /* ViewController.swift in Sources */,
 				8AC0C1111CFF22CE00A631F2 /* AppDelegate.swift in Sources */,
+				96F11F7F1D087A3B008F28E6 /* QuoteTVCell.swift in Sources */,
+				96F11F771D0879D9008F28E6 /* TagTVC.swift in Sources */,
+				96F11F791D0879ED008F28E6 /* QuoteTVC.swift in Sources */,
 				8AC0C1191CFF22CE00A631F2 /* Quotr.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Quotr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.Quotr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -266,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Quotr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.Quotr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,6 +325,7 @@
 				8AC0C1241CFF22CE00A631F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
